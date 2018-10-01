@@ -1,0 +1,140 @@
+.Transition{
+	position: relative;
+	top:400px;
+	left:670px;
+	width: 100px;
+	height:100px;
+	/*background: color image repeat position*/
+	background: green;
+	
+	/*transition:property */
+	transition: all 5s;
+}
+
+.Transition2{
+	position: relative;
+	top:300px;
+	left:500px;
+	width: 100px;
+	height:100px;
+	/*background: color image repeat position*/
+	background: red;
+	margin: 9;
+	/*transition:property */
+	transition: all 5s;
+}
+.Transition3{
+	position: relative;
+	top:200px;
+	left: 840px;
+	width: 100px;
+	height:100px;
+	/*background: color image repeat position*/
+	background: blue;
+	
+	/*transition:property */
+	transition: all 5s;
+}
+
+.Transition:hover{
+	background:url("../images/Color1.jpeg") center top;
+	background-size: cover;
+	border-radius: 50%;
+	transform: scale(1.5);
+}
+
+.Transition2:hover{
+	background:url("../images/Color2.jpeg") center top;
+	background-size: cover;
+	border-radius: 50%;
+	transform: scale(1.5);
+}
+
+.Transition3:hover{
+	background:url("../images/Color3.jpeg") center top;
+	background-size: cover;
+	border-radius: 50%;
+	transform: scale(1.5);
+}
+
+.flex-container{
+	display: flex;
+	/*background-color: #ff9a9e; */
+	flex-direction: row;
+	justify-content: center; 
+}
+
+.flex-container>div{
+	background-color: #89cff0;
+	margin: 10px;
+	padding:25px;
+	font-size: 40px;
+	width: 100px;
+	text-align: center;
+	height: 20px
+}
+
+
+
+body{
+	font-family: "VT323" , monospace;
+	font-size: 20px;
+	text-align: center;	
+	background-color: #89cff0;
+
+
+}
+
+.Animation{
+	width: 50px;
+	height:20px;
+	background-color: orange;
+	position: fixed;
+	top:200px;
+	left:200px;
+	/*NAME MUST MATCH WHAT'S NEXT TO KEYFRAMES*/
+
+	animation-name: color-change;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.Animation2{
+	width: 50px;
+	height:20px;
+	background-color: orange;
+	position: fixed;
+	top:200px;
+	right: 200px;
+	/*NAME MUST MATCH WHAT'S NEXT TO KEYFRAMES*/
+
+	animation-name: color-change;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+	
+	@keyframes color-change{
+	0%{background-color: orange;}
+	25%{background-color: purple;}
+	50%{background-color: yellow;}
+	75%{background-color: pink;}
+	100%{background-color: grey;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
